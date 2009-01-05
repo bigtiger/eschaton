@@ -1,0 +1,38 @@
+body{
+ background-color: #454442;
+}
+
+a{
+  color: #FFA500;
+}
+
+a:hover{
+  color: #FFA500;
+  background-color: #6A6866;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+
+#header{
+  margin: 20px;
+  margin-top: 3px;
+  padding: 10px;
+  margin-bottom: 5px;  
+}
+
+hr{
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+#posts{
+  margin: 20px;
+  padding: 20px;  
+  margin-top: 10px;    
+  padding-top: 10px;    
+}

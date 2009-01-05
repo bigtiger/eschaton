@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Eschaton</title>
+ <link href="http://yawningman.github.com/eschaton/atom.xml" rel="self"/>
+ <link href="http://yawningman.github.com/eschaton/"/>
+ <updated>2009-01-05T21:59:57+02:00</updated>
+ <id>http://yawningman.github.com/eschaton/</id>
+ <author>
+   <name>Dr Nic Williams</name>
+   <email>yawningmanwilliams@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Met a green leaf lady</title>
+   <link href="http://yawningman.github.com/eschaton/2009/01/06/Met a green leaf lady.html"/>
+   <updated>2009-01-06T00:00:00+02:00</updated>
+   <id>http://yawningman.github.com/eschaton/2009/01/06/Met a green leaf lady</id>
+   <content type="html">&lt;p&gt;yes this is a test&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome to 'Eschaton'</title>
+   <link href="http://yawningman.github.com/eschaton/2009/01/05/first-post.html"/>
+   <updated>2009-01-05T00:00:00+02:00</updated>
+   <id>http://yawningman.github.com/eschaton/2009/01/05/first-post</id>
+   <content type="html">&lt;p&gt;Eschaton is going to be an awesome project.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>testing</title>
+   <link href="http://yawningman.github.com/eschaton/2009/01/01/testing.html"/>
+   <updated>2009-01-01T00:00:00+02:00</updated>
+   <id>http://yawningman.github.com/eschaton/2009/01/01/testing</id>
+   <content type="html">&lt;p&gt;dasdas&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
