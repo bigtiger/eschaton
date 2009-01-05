@@ -25,6 +25,10 @@ a:hover{
   margin-bottom: 5px;  
 }
 
+#header a{
+  color: white;
+}
+
 hr{
   color: #fff;
   margin-bottom: 5px;
