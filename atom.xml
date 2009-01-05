@@ -8,10 +8,9 @@ layout: nil
  <link href="http://yawningman.github.com/eschaton/atom.xml" rel="self"/>
  <link href="http://yawningman.github.com/eschaton/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://yawningman.github.com/eschaton/</id>
+ <id>http://yawningman.github.com/eschaton</id>
  <author>
-   <name>Dr Nic Williams</name>
-   <email>yawningmanwilliams@gmail.com</email>
+   <name>yawningman</name>
  </author>
 
  {% for post in site.posts %}
