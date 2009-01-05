@@ -37,6 +37,24 @@ hr{
 #content{
   margin: 20px;
   padding: 20px;  
-  margin-top: 10px;    
-  padding-top: 10px;    
+  margin-top: 0;
+  padding-top: 5px;    
+}
+
+#post{
+  margin-bottom: 10px;
+  padding-bottom: 10px;  
+}
+
+#post h2{
+  text-decoration: underline;
+}
+
+#related{
+  border-top: solid 1px #fff;
+  padding-top: 10px;
+}
+
+#related ul{
+  list-style-type: square;
 }
