@@ -1,7 +1,6 @@
 ---
 layout: posts
-title: testing
+title: where it all happens
 ---
 
-Where it all happens....
 <img src="/eschaton/images/where_it_happens.jpg" />
