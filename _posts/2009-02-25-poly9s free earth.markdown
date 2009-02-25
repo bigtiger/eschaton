@@ -1,0 +1,14 @@
+---
+layout: post
+title: Poly9's free earth
+---
+
+So to introduce the new blog I thought I would also introduce a new idea.
+
+<a href="http://poly9.com/" target="_blank">Poly9</a> has a rad piece of software called <a href="http://freeearth.poly9.com/">free earth</a>
+which according to their site is a <span class="site_quote">"cross-browser, cross-platform 3D globe which does not require any download."</span>
+
+I thought it would be a nifty if eschaton could provide an abstraction for rails developers to add 3D maps to their sites, so 
+in the next few weeks I'm going to begin this. The eschaton code would look much the same as the google maps api. 
+
+Watch this space for <span class="site_quote">FreeEarth::Map</span> to appear.
