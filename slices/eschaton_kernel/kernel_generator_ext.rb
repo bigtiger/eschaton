@@ -1,5 +1,16 @@
 module KernelGeneratorExt
 
+  # Declares the variables in javascript.
+  #
+  #  declare_variables :url_data => 'nil' #=> 'var url_data = null;
+  #  declare_variables :url_data => 'nil',
+  #                    :name => 'yawningman' #=> var url_data = null; var name = 'yawningman';
+  def declare_variables(names_and_values)
+    names_and_values.each do |name, value|
+      self << "var #{name} = #{value.to_js};"
+    end
+  end
+
   # Evaluates the +script+ as javascript on the client.
   def eval(script)
     self << "eval(#{script.to_js});"

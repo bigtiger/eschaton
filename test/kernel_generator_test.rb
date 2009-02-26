@@ -4,6 +4,24 @@ Test::Unit::TestCase.output_fixture_base = File.dirname(__FILE__)
 
 class KernelGeneratorTest < Test::Unit::TestCase
 
+  def test_declare_variables
+    script = Eschaton.javascript_generator
+    assert_output_fixture 'var url_data = null;',
+                          script.record_for_test{
+                            script.declare_variables :url_data => nil
+                          }
+    
+    ordered_variable_hash = ActiveSupport::OrderedHash.new
+    ordered_variable_hash[:url_data] = nil
+    ordered_variable_hash[:name] = 'yawningman'
+
+    assert_output_fixture 'var url_data = null;
+                           var name = "yawningman";',
+                          script.record_for_test{
+                            script.declare_variables ordered_variable_hash
+                          }
+  end
+
   def test_record
     script = Eschaton.javascript_generator
 
