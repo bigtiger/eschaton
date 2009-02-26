@@ -1,0 +1,37 @@
+---
+layout: post
+title: google api config file
+---
+
+<p>
+I recently added support for putting google api keys into a yaml config file <span class="site_quote">(<b>config/eschaton_google_api_keys.yml</b>)</span>.
+This config file will allow you to add keys for environments(development, test, staging and production) as well as 
+for specific domain names.
+</p>
+
+<p>
+If there is a domain name in the config file that matches your current domain name<span class="site_quote">(using ActionController::Request#domain)</span>
+it will be honored over any environment keys. This allows for testing with sub domains even when in development mode.
+</p>
+
+<h3>For existing eschaton developers</h3>
+<p>
+  Existing developers will be familiar with the <span class="site_quote">GOOGLE_MAPS_API_KEY</span> constant.<br/>
+  Follow these steps to start using the config file instead:
+  <ol>
+    <li>Pull the latest eschaton</li>
+    <li>Create the file <span class="site_quote"><b>config/eschaton_google_api_keys.yml</b></span></li>
+    <li>
+      Add any environment and domain name keys in the above file, see <span class="site_quote"><b>generators/map/templates/eschaton_google_api_keys.yml</b></span>
+      for a sample format
+    </li>
+    <li>Remove any reference to the <span class="site_quote">GOOGLE_MAPS_API_KEY</span> constant in your code.</li>
+    <li>Restart your app</li>
+  </ol>
+</p>
+
+<h3>For new eschaton developers</h3>
+<p>
+  The config file is now created as part of the map generator <span class="site_quote">script/generate map</span> so new
+  developers can start using it right away.
+</p>
