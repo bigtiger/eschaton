@@ -165,3 +165,7 @@ html>body #content {
   background-color: #F5F5F5;
   font-style: italic;
 }
+
+.post_header{
+  margin-bottom: 2px;
+}
