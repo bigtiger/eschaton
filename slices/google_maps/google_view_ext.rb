@@ -8,6 +8,7 @@ module GoogleViewExt
   #                          :center => {:latitude => -33.947, :longitude => 18.462})
   #  end
   def run_map_script(&block)
+    Eschaton.current_view = eval("self", block.binding)
     run_javascript do |script|
       script.google_map_script {yield script}
     end
